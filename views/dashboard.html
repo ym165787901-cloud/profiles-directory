@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container">
+    <span class="brand">Admin dashboard</span>
+    <div><a href="/">View site</a><button class="btn ghost sm" id="logout" style="margin-inline-start:1.2rem">Log out</button></div>
+  </div></nav>
+  <main class="container" style="padding-top:2rem">
+    <div class="panel">
+      <h2>Profiles</h2>
+      <form id="profileForm" class="stack">
+        <label>Name<input name="name" dir="auto" maxlength="80" required></label>
+        <label>Photo<input name="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif" required></label>
+        <button class="btn" type="submit">Add profile</button>
+      </form>
+      <div id="profileList" class="grid"></div>
+    </div>
+    <div class="panel">
+      <h2>Gallery</h2>
+      <form id="galleryForm" class="stack">
+        <label>Images (select one or more)<input name="image" type="file" accept="image/jpeg,image/png,image/webp,image/gif" multiple required></label>
+        <button class="btn" type="submit">Upload images</button>
+      </form>
+      <div id="galleryList" class="masonry"></div>
+    </div>
+  </main>
+  <div id="toasts" aria-live="polite"></div>
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

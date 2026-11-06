@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin sign in</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <main class="auth"><div class="panel">
+    <h2>Admin sign in</h2>
+    <form id="login" class="stack">
+      <label>Username<input name="username" dir="auto" autocomplete="username" required></label>
+      <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="error" id="err" role="alert"></p>
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+    <a href="/">Back to the directory</a>
+  </div></main>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

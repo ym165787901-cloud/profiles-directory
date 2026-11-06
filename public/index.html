@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profiles Directory</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav class="nav"><div class="container">
+    <span class="brand">Profiles Directory</span>
+    <div><a href="#profiles">Profiles</a><a href="#gallery">Gallery</a><a href="/admin">Admin</a></div>
+  </div></nav>
+  <header class="hero container">
+    <h1>Faces behind the names.</h1>
+    <p>Browse everyone in the directory, then explore the photo gallery. Hover a photo to see it in color.</p>
+  </header>
+  <main class="container">
+    <section id="profiles"><h2>Profiles</h2><div id="profileGrid" class="grid"></div></section>
+    <section id="gallery"><h2>Gallery</h2><div id="galleryGrid" class="masonry"></div></section>
+  </main>
+  <dialog id="lightbox"><img alt="Enlarged gallery image"></dialog>
+  <script type="module" src="/js/home.js"></script>
+</body>
+</html>
